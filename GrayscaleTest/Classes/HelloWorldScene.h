@@ -17,6 +17,8 @@ public:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+private:
+    cocos2d::CCSize size;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
