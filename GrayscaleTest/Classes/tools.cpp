@@ -22,7 +22,7 @@ CCSprite* grayWithCCNode(CCNode* oldSprite,bool isGray){
 }
 //传入CCNode，根据条件是否变灰，然后返回之后的纹理
 CCTexture2D* getTexture(CCNode* sprite,bool isGray){
-    CCPoint p = sprite->getAnchorPoint();
+    CCPoint p = sprite->getAnchorPoint();    
     sprite->setAnchorPoint(ccp(0,0));
     CCRenderTexture *outTexture = CCRenderTexture::create((int)sprite->getContentSize().width,(int)sprite->getContentSize().height);
     outTexture->begin();

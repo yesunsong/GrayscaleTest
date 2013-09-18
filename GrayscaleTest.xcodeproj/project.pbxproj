@@ -15,9 +15,6 @@
 		1288614D17DDD60300173C85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1288614C17DDD60300173C85 /* UIKit.framework */; };
 		1288614F17DDD60300173C85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1288614E17DDD60300173C85 /* Foundation.framework */; };
 		1288615117DDD60300173C85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1288615017DDD60300173C85 /* CoreGraphics.framework */; };
-		1288615517DDD60300173C85 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615417DDD60300173C85 /* CloseNormal.png */; };
-		1288615717DDD60300173C85 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615617DDD60300173C85 /* CloseSelected.png */; };
-		1288615917DDD60300173C85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615817DDD60300173C85 /* Default.png */; };
 		1288615B17DDD60300173C85 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615A17DDD60300173C85 /* HelloWorld.png */; };
 		1288615D17DDD60300173C85 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615C17DDD60300173C85 /* Icon-72.png */; };
 		1288615F17DDD60300173C85 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1288615E17DDD60300173C85 /* Icon-Small-50.png */; };
@@ -280,6 +277,13 @@
 		128864E017DDD60B00173C85 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 128864DF17DDD60B00173C85 /* libwebsockets.a */; };
 		128864E617DDD60B00173C85 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 128864E517DDD60B00173C85 /* AppDelegate.cpp */; };
 		128864E917DDD60B00173C85 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 128864E817DDD60B00173C85 /* HelloWorldScene.cpp */; };
+		128864F517DDD78900173C85 /* BgraySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 128864EF17DDD78800173C85 /* BgraySprite.cpp */; };
+		128864F617DDD78900173C85 /* GraySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 128864F117DDD78800173C85 /* GraySprite.cpp */; };
+		128864F717DDD78900173C85 /* tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 128864F317DDD78800173C85 /* tools.cpp */; };
+		128864FC17DDD79100173C85 /* compare.png in Resources */ = {isa = PBXBuildFile; fileRef = 128864F817DDD79100173C85 /* compare.png */; };
+		128864FD17DDD79100173C85 /* hero.plist in Resources */ = {isa = PBXBuildFile; fileRef = 128864F917DDD79100173C85 /* hero.plist */; };
+		128864FE17DDD79100173C85 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 128864FA17DDD79100173C85 /* hero.png */; };
+		128864FF17DDD79100173C85 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 128864FB17DDD79100173C85 /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -292,9 +296,6 @@
 		1288614C17DDD60300173C85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1288614E17DDD60300173C85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1288615017DDD60300173C85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1288615417DDD60300173C85 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloseNormal.png; path = Resources/CloseNormal.png; sourceTree = "<group>"; };
-		1288615617DDD60300173C85 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloseSelected.png; path = Resources/CloseSelected.png; sourceTree = "<group>"; };
-		1288615817DDD60300173C85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		1288615A17DDD60300173C85 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HelloWorld.png; path = Resources/HelloWorld.png; sourceTree = "<group>"; };
 		1288615C17DDD60300173C85 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
 		1288615E17DDD60300173C85 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -873,6 +874,16 @@
 		128864E517DDD60B00173C85 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		128864E717DDD60B00173C85 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		128864E817DDD60B00173C85 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		128864EF17DDD78800173C85 /* BgraySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BgraySprite.cpp; path = Classes/BgraySprite.cpp; sourceTree = "<group>"; };
+		128864F017DDD78800173C85 /* BgraySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BgraySprite.h; path = Classes/BgraySprite.h; sourceTree = "<group>"; };
+		128864F117DDD78800173C85 /* GraySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GraySprite.cpp; path = Classes/GraySprite.cpp; sourceTree = "<group>"; };
+		128864F217DDD78800173C85 /* GraySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraySprite.h; path = Classes/GraySprite.h; sourceTree = "<group>"; };
+		128864F317DDD78800173C85 /* tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tools.cpp; path = Classes/tools.cpp; sourceTree = "<group>"; };
+		128864F417DDD78800173C85 /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tools.h; path = Classes/tools.h; sourceTree = "<group>"; };
+		128864F817DDD79100173C85 /* compare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compare.png; path = Resources/compare.png; sourceTree = "<group>"; };
+		128864F917DDD79100173C85 /* hero.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = hero.plist; path = Resources/hero.plist; sourceTree = "<group>"; };
+		128864FA17DDD79100173C85 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hero.png; path = Resources/hero.png; sourceTree = "<group>"; };
+		128864FB17DDD79100173C85 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = Resources/test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -944,9 +955,10 @@
 		1288615317DDD60300173C85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1288615417DDD60300173C85 /* CloseNormal.png */,
-				1288615617DDD60300173C85 /* CloseSelected.png */,
-				1288615817DDD60300173C85 /* Default.png */,
+				128864F817DDD79100173C85 /* compare.png */,
+				128864F917DDD79100173C85 /* hero.plist */,
+				128864FA17DDD79100173C85 /* hero.png */,
+				128864FB17DDD79100173C85 /* test.png */,
 				1288615A17DDD60300173C85 /* HelloWorld.png */,
 				1288615C17DDD60300173C85 /* Icon-72.png */,
 				1288615E17DDD60300173C85 /* Icon-Small-50.png */,
@@ -2093,6 +2105,12 @@
 		128864E317DDD60B00173C85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				128864EF17DDD78800173C85 /* BgraySprite.cpp */,
+				128864F017DDD78800173C85 /* BgraySprite.h */,
+				128864F117DDD78800173C85 /* GraySprite.cpp */,
+				128864F217DDD78800173C85 /* GraySprite.h */,
+				128864F317DDD78800173C85 /* tools.cpp */,
+				128864F417DDD78800173C85 /* tools.h */,
 				128864E417DDD60B00173C85 /* AppDelegate.h */,
 				128864E517DDD60B00173C85 /* AppDelegate.cpp */,
 				128864E717DDD60B00173C85 /* HelloWorldScene.h */,
@@ -2151,9 +2169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1288615517DDD60300173C85 /* CloseNormal.png in Resources */,
-				1288615717DDD60300173C85 /* CloseSelected.png in Resources */,
-				1288615917DDD60300173C85 /* Default.png in Resources */,
 				1288615B17DDD60300173C85 /* HelloWorld.png in Resources */,
 				1288615D17DDD60300173C85 /* Icon-72.png in Resources */,
 				1288615F17DDD60300173C85 /* Icon-Small-50.png in Resources */,
@@ -2164,6 +2179,10 @@
 				1288616917DDD60300173C85 /* iTunesArtwork in Resources */,
 				1288620817DDD60500173C85 /* ChangeLog in Resources */,
 				1288637C17DDD60800173C85 /* project.pbxproj in Resources */,
+				128864FC17DDD79100173C85 /* compare.png in Resources */,
+				128864FD17DDD79100173C85 /* hero.plist in Resources */,
+				128864FE17DDD79100173C85 /* hero.png in Resources */,
+				128864FF17DDD79100173C85 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2423,6 +2442,9 @@
 				128864D817DDD60B00173C85 /* cpVect.c in Sources */,
 				128864E617DDD60B00173C85 /* AppDelegate.cpp in Sources */,
 				128864E917DDD60B00173C85 /* HelloWorldScene.cpp in Sources */,
+				128864F517DDD78900173C85 /* BgraySprite.cpp in Sources */,
+				128864F617DDD78900173C85 /* GraySprite.cpp in Sources */,
+				128864F717DDD78900173C85 /* tools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

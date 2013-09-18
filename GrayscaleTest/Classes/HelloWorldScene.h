@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "GraySprite.h"
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -17,8 +18,11 @@ public:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+    void updateThis(cocos2d::CCObject* pSender);
 private:
     cocos2d::CCSize size;
+    GraySprite*  testSprite;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
